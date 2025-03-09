@@ -1,1 +1,1 @@
-# design-patterns-cookbook
+# cookbook

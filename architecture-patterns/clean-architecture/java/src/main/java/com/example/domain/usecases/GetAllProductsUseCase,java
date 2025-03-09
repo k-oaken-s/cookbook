@@ -1,0 +1,16 @@
+package com.example.domain.usecases;
+
+import com.example.domain.entities.Product;
+import com.example.domain.repositories.ProductRepository;
+import lombok.RequiredArgsConstructor;
+
+import java.util.List;
+
+@RequiredArgsConstructor
+public class GetAllProductsUseCase {
+    private final ProductRepository productRepository;
+
+    public List<Product> execute() {
+        return productRepository.findAll();
+    }
+}
